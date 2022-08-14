@@ -1,0 +1,44 @@
+//base
+@import './base/mixin';
+@import './base/variables';
+
+
+// components
+@import './components/header';
+@import './components/cards';
+
+// pages
+@import './pages/index';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    max-width: 1400px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+.main{
+    .header{
+        width: 100%;
+        max-width: 1400px;
+        height: 13vh;
+        max-height: 100px;
+        background: transparent;
+        position: fixed;
+        z-index: 9;
+
+    }
+    .scrolled_nav{
+        background-color: #ffffffc2;
+        backdrop-filter: blur(20px);
+      }
+    
+}
+
